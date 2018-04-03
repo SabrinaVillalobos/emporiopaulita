@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import Products from './../Products';
 
 class Home extends Component {
   render() {
     return (
-      <div>Home</div>
+      <div>
+        <Products />
+      </div>
     );
   }
 }
