@@ -10,7 +10,7 @@ const data = [
     "title": "Notebook Gamer Intel Core i7 16GB RAM- 1TB DD + 256GB SSD 17,3\"",
     "brand": "Lenovo",
     "img": "https://falabella.scene7.com/is/image/Falabella/5074630_1?$producto308$&wid=472&hei=472",
-    "category": "Electrónica",
+    "category": "Electronica",
     "price": 1548624
   },
   {

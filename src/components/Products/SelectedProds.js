@@ -13,9 +13,44 @@ class SelectedProds extends Component {
     }
   }
   componentWillMount() {
-    this.setState({
-      data: data
-    });
+    let path = window.location.pathname;
+    if (path !== '/products') {
+      let toSearch = path.split('/').pop().trim();
+      let selection = [];
+      data.map(product => {
+        if (product.category.toLowerCase().replace(/ /g, '-') === toSearch) {
+          selection.push(product);
+        }
+        return selection;
+      });
+      this.setState({
+        data: selection
+      });
+    } else {
+      this.setState({
+        data: data
+      });
+    }
+  }
+  componentWillReceiveProps() {
+    let path = window.location.pathname;
+    if (path !== '/products') {
+      let toSearch = path.split('/').pop().trim();
+      let selection = [];
+      data.map(product => {
+        if (product.category.toLowerCase().replace(/ /g, '-') === toSearch) {
+          selection.push(product);
+        }
+        return selection;
+      });
+      this.setState({
+        data: selection
+      });
+    } else {
+      this.setState({
+        data: data
+      });
+    }
   }
   componentDidMount() {
     console.log(this.state);
