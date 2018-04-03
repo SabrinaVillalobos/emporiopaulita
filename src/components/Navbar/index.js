@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Categories from './Categories';
+import './index.css';
 
 class Navbar extends Component {
   render() {
@@ -15,11 +17,9 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link to="/register-email" className="nav-link">Registro</Link>
               </li>
-              <li className="nav-item">
-                <Link to="/products" className="nav-link">Productos</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/products/electronica">Electrónica</Link>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                <Categories/>
               </li>
             </ul>
           </div>
