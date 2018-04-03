@@ -25,10 +25,13 @@ const getData = urls => {
         let infoTable = $('.fb-product-information__specification').text().trim().toLowerCase();
         if (infoTable.includes('ni�o') || infoTable.includes('ni�a')) {
           obj.category = 'Vestuario Infantil';
+          obj.price = Math.floor((Math.random() * 25000) + 5000);
         } else if (infoTable.includes('mujer')) {
           obj.category = 'Vestuario Femenino';
+          obj.price = Math.floor((Math.random() * 25000) + 5000);
         } else {
           obj.category = 'Electrónica';
+          obj.price = Math.floor((Math.random() * 1500000) + 250000);
         }
         resolve(obj);
       });
@@ -38,7 +41,7 @@ const getData = urls => {
 
   Promise.all(promises).then((results) => {
     console.log("Results > "+JSON.stringify(results, null, 2));
-    fs.writeFileSync(`data.json`, JSON.stringify(results, null, 2));
+    fs.writeFileSync(`dev/scraper/data.json`, JSON.stringify(results, null, 2));
   }).catch((error) => {
     console.log('error > ' + error);
   });
