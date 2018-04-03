@@ -3,8 +3,11 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import RegisterWithEmail from './components/RegisterWithEmail';
+import firebase from 'firebase';
 import Products from './components/Products';
+import {provider, auth} from './client';
 import './App.css';
+
 
 class App extends Component {
   render() {
