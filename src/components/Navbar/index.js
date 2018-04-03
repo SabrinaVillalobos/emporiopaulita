@@ -19,7 +19,7 @@ class Navbar extends Component {
                 <Link to="/products" className="nav-link">Productos</Link>
               </li>
               <li className="nav-item">
-                <Link to="/products/electrónica">Electrónica</Link>
+                <Link to="/products/electronica">Electrónica</Link>
               </li>
             </ul>
           </div>
