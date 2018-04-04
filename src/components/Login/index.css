@@ -27,15 +27,25 @@
 .line{
   border-top:2px solid #FF775C;
 }
+
+.form-control {
+  margin-top: 10px;
+}
+
 .form-control:focus {
-  border-color: inherit;
+  border-color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color:transparent;
 }
-.continuebtn{
+.continuebtn {
   width: 70%;
-  background-color:#969FAA;
+  background-color:#FF775C;
+  border: 1px solid white;
+}
+
+.continuebtn:hover {
+  background-color: pink;
+  border: 1px solid white;
 }
 
 label{

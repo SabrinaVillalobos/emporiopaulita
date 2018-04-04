@@ -1,30 +1,21 @@
 import React, { Component } from 'react';
 import Navbar from './../Navbar';
-import Sales from './Sales';
-import FindYourMatch from './FindYourMatch';
+import Products from './../Products';
 
 class Home extends Component {
   constructor() {
     super();
     this.state = {
-      isFiltering: false
+      data: null,
+      userId: null
     }
+  }
+  componentWillMount() {
   }
   render() {
     return (
       <div>
-        <Navbar/>
-        {
-          this.state.isFiltering ? <FindYourMatch/>
-          : 
-          <div><Sales/>
-          <button onClick={e => {
-            e.preventDefault();
-            this.setState({
-              isFiltering: true
-            })
-          }}>Encuentra tu match</button></div>
-        }
+        <Products/>
       </div>
     );
   }

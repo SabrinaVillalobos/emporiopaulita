@@ -23,22 +23,34 @@ class FindYourMatch extends Component {
     })
   }
   render() {
-    return (
-      <div id="FindYourMatch">
-        {
-          this.state.data !== null ? 
-            this.state.categories.map(category => {
-              return <button key={category} onClick={e => {
-                let filters = [e.target.innerText];
-                this.setState({
-                  filters: filters
-                });
-              }}>{category}</button>
-            })
-          : <p>null</p>
-        }
-      </div>
-    );
+    if (this.state.data !== null){
+      return this.state.categories.map(category => {
+        return (
+          <button key={category} onClick={e => {
+            let filters = [e.target.innerText];
+            this.setState({
+              filters: filters
+            });
+            return (<p>asdasd</p>);
+          }}>{category}</button>
+        );
+      })
+    }
+    // return (
+    //   <div id="FindYourMatch">
+    //     {
+    //       // this.state.data !== null ? 
+    //       //   this.state.categories.map(category => {
+    //       //     return <button key={category} onClick={e => {
+    //       //       let filters = [e.target.innerText];
+    //       //       this.setState({
+    //       //         filters: filters
+    //       //       });
+    //       //     }}>{category}</button>
+    //       //   })
+    //       // : <p>null</p>
+    //     }
+    //   </div>
   }
 };
 

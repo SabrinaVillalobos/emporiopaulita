@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'nuka-carousel';
+import Img1 from './../../images/img1.jpg';
 
 let counter = 0;
 
@@ -21,7 +22,7 @@ class Slider extends Component {
             window.location = '/login';
           };
         } } >
-        <div className="inner-slider"><img src="https://www.planwallpaper.com/static/images/6a98d1d4bf37df099b6c74fdf5ee338f--iphone-wallpaper-dark-colors-galaxies-wallpaper.jpg" alt="" /></div>
+        <div className="inner-slider"><img src={Img1} alt="" /></div>
         <div className="inner-slider"><img src="http://www.junkinside.com/wp-content/uploads/2011/09/fantasy-night-wallpaper-for-android-mobile-phone.jpg" alt="" /></div>
       </Carousel>
     );

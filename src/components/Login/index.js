@@ -43,16 +43,15 @@ class Login extends Component {
                     email: '',
                     pass: ''
                   })
+                  window.location = '/';
                 });
             }}>Continuar</button></div>
             <Link className="missing-pass" to="/contra">¿Olvidaste tu contraseña?</Link>
           </form>
-          <p>----o-----</p>
           <button>Continuar con Google</button>
           <button>Continuar con Facebook</button>
           <p className="noacc">¿No tienes una cuenta?</p>
           <Link className="missing-pass" to="/register">REGISTRATE</Link>
-          <button onClick={() => auth.doSignOut()}>Salir</button>
         </div>
       </div>
     );
