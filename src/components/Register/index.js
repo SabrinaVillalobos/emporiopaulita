@@ -53,7 +53,7 @@ class Register extends Component {
                         name: '',
                         lastName: ''
                       });
-                      window.location = `/register/${authUser.uid}`;
+                      window.location = `${process.env.PUBLIC_URL}/register/${authUser.uid}`;
                     });
                 });
             }}>Confirmar</button>
