@@ -43,7 +43,7 @@ class Login extends Component {
                     email: '',
                     pass: ''
                   })
-                  window.location = '/';
+                  window.location = process.env.PUBLIC_URL;
                 });
             }}>Continuar</button></div>
             <Link className="missing-pass" to="/contra">¿Olvidaste tu contraseña?</Link>
