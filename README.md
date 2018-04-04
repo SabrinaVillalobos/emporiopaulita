@@ -11,13 +11,13 @@ Proyecto desarrollado en [Laboratoria](http://www.laboratoria.la "laboratoria")
 
 Realizar una página web para el Emporio Paulita ubicado en la Comuna de Lota (Región del Bio-Bio chile), quienes son los unicos actores del rubro ofreciendo 7 departamentos:
 
-*Vestuario femenino**
-*Vestuario Masculino**
-*Vestuario Infantil**
-*Calzado infantil**
-*Calzado Femenino**
-*Línea Blanca**
-*Electónica**
+* Vestuario femenino**
+* Vestuario Masculino**
+* Vestuario Infantil**
+* Calzado infantil**
+* Calzado Femenino**
+* Línea Blanca**
+* Electónica**
 
 
 Esta empresa familiar nacio de el esfuerzo de el abuelo , la cual se encuentra en la plaza de armas y cuenta con una tienda de 1200 metros el fin de ellos es llegar a más partes de chile por medio de el despacho pero su vitrina principal es poder tener una página web
