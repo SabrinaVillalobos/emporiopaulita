@@ -9,5 +9,17 @@ export const doCreateUser = (id, name, lastName, email) =>
     email,
   });
 
+export const storageDetails = (id, gender, age) => {
+  const ref = db.ref(`users/${id}`);
+  let obj = {
+    gender: gender,
+    age: age
+  };
+  ref.push(obj)
+    .catch(err => {
+      console.log(err);
+    });
+};
+
 export const onceGetUsers = () =>
   db.ref('users').once('value');

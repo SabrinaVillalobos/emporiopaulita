@@ -44,6 +44,7 @@ class Login extends Component {
                     pass: ''
                   });
                 });
+                window.location = '/';
             }}>Continuar</button>
             <Link className="missing-pass" to="/contra">¿Olvidaste tu contraseña?</Link>
             <Link className="missing-pass" to="/register">Registrate</Link>

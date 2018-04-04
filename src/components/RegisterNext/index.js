@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import Logo from './../../images/logo.png';
+import firebase from 'firebase';
+import { db } from './../../firebase';
 
 class RegisterNext extends Component {
   constructor() {
     super();
     this.state = {
       age: 1,
-      gender: ''
+      gender: '',
+      userID: null
     }
+  }
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({
+          userID: user.uid
+        });
+      }
+   });
   }
   render() {
     return (
@@ -42,7 +54,18 @@ class RegisterNext extends Component {
               <span>Masculino</span>
             </button>
           </form>
-          <button>Continuar</button>
+          <button className="btn btn-primary" onClick={e => {
+            e.preventDefault();
+            let id = this.state.userID;
+            let gender = this.state.gender;
+            let age = this.state.age;
+            db.storageDetails(id, gender, age);
+            this.setState({
+              age: '',
+              gender: ''
+            });
+            window.location = '/';
+          }}>Continuar</button>
         </div>
       </div>
     );

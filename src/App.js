@@ -26,6 +26,15 @@ class App extends Component {
       }
    });
   }
+  componentWillReceiveProps() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({
+          user: user
+        })
+      }
+   });
+  }
   render() {
     return (
       <div className="App">
