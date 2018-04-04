@@ -1,0 +1,52 @@
+*{
+  background-color:#FFF9F7;
+}
+
+#Login .col-sm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#LoginLogo {
+  width: 200px;
+}
+
+.weknow {
+  color:#707982;
+}
+.andhow{
+  margin-top: -15px;
+  color:#707982;
+}
+.login{
+  color: #707982;
+}
+.line{
+  border-top:2px solid #FF775C;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color:transparent;
+}
+.continuebtn{
+  width: 70%;
+  background-color:#969FAA;
+}
+
+label{
+  margin-bottom:0;
+}
+
+.missing-pass{
+  text-align:center;
+  color:#FF775C;
+}
+
+.noacc{
+  color:#707982;
+}
