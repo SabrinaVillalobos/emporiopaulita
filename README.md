@@ -55,5 +55,5 @@ Luego de esto poder realizar a página web con el equipo Fron-end en donde el ob
 
 ##  Prototipo Marvel:
 
-[Enlace prototipo] (https://marvelapp.com/8875c5e/screen/40668534)
+[Enlace prototipo](https://marvelapp.com/8875c5e/screen/40649428)
 
