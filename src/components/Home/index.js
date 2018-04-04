@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './../Navbar';
 import Products from './../Products';
+import Sales from './Sales';
 
 class Home extends Component {
   constructor() {
@@ -15,7 +16,8 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Products/>
+        <Navbar/>
+        <Sales/>
       </div>
     );
   }

@@ -70,7 +70,7 @@ class SelectedProds extends Component {
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="/" className="btn btn-primary" disabled>Ver Más</a>
+                  <a href="/" className="btn btn-primary disabled">Ver Más</a>
                 </div>
               </div>);
             }) 
