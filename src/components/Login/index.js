@@ -14,9 +14,9 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="row" id="Login">
+      <div className="row form-user" id="Login">
         <div className="col-sm">
-          <div id="LogoContainer"><img src={Logo} alt="Logo del Emporio" id="LoginLogo"/></div>
+          <div className="logo-container"><img src={Logo} alt="Logo del Emporio" id="LoginLogo" className="logo"/></div>
           <p>Sabemos lo que quieres
             y cómo lo quieres
           </p>
@@ -27,7 +27,7 @@ class Login extends Component {
                 this.setState({
                   email: e.target.value
                 })}}/>
-              <input type="password" value={this.state.pass} className="form-control" id="PassMail" placeholder="Contraseña" onChange={e => {
+              <input type="password" value={this.state.pass} className="form-control" id="LoginPass" placeholder="Contraseña" onChange={e => {
                 this.setState({
                   pass: e.target.value
                 })
@@ -42,7 +42,7 @@ class Login extends Component {
                   this.setState({
                     email: '',
                     pass: ''
-                  })
+                  });
                 });
             }}>Continuar</button>
             <Link className="missing-pass" to="/contra">¿Olvidaste tu contraseña?</Link>
