@@ -1,8 +1,8 @@
 const request = require('request');
 const cheerio = require('cheerio');
 const fs = require('fs');
-const urls1 = ['881031058/Polera-Manga-Larga-Nino/881031062', '5074630/Notebook-Gamer-Intel-Core-i7-16GB-RAM-1TB-DD-+-256GB-SSD-17,3-/5074630', '881098015/Chaleco/881098017', '881009229/Sweater/881009232'];
-const urls2 = ['881023366/Jeans-con-Suspensores/881023368', '881099419/Chaleco/881099420', '5943531/Sweater/5943540', '881012064/Sweaters/881012065'];
+const urls1 = ['881098015/Chaleco/881098017', '881099419/Chaleco/881099420', '5943531/Sweater/5943540', '881012064/Sweaters/881012065', '881009229/Sweater/881009232'];
+const urls2 = ['6130890/Polera-Cavity/6130897', '5902155/Camisa-Fluida/5902157', '5524421/Polera-Mujer-Wms-Evelyn.S18/5524428', '881101143/Sweaters/881101144', '881018263/Sweater/881018264', '881018289/Sweaters/881018290', '6151847/Poleron-Center/6151848']
 const urls = urls1.concat(urls2);
 
 const getData = urls => {

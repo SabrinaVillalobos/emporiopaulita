@@ -52,9 +52,6 @@ class SelectedProds extends Component {
       });
     }
   }
-  componentDidMount() {
-    console.log(this.state);
-  }
   render() {
     return (
       <div id="SelectedProds" className="card-group">
