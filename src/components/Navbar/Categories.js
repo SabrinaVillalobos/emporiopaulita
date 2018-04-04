@@ -21,9 +21,6 @@ class Categories extends Component {
       data: categories
     });
   }
-  componentDidMount() {
-    console.log(this.state);
-  }
   render() {
     return (
       <div className="dropdown-menu" aria-labelledby="productsDropdown">

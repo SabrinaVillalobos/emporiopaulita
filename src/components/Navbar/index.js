@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Categories from './Categories';
-import './index.css';
+// import './index.css';
 
 class Navbar extends Component {
   render() {

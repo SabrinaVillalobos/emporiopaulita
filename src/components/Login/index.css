@@ -1,0 +1,11 @@
+#Login .col-sm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#LoginLogo {
+  width: 200px;
+}

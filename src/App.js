@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+// import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
-import RegisterWithEmail from './components/RegisterWithEmail';
+import Presentation from './components/Presentation';
+import Login from './components/Login';
+import { Switch, Route } from 'react-router-dom';
+import { auth } from './firebase';
 import firebase from 'firebase';
-import Products from './components/Products';
-import {provider, auth} from './client';
 import './App.css';
 
-
 class App extends Component {
-  
+  constructor() {
+    super();
+    this.state = {
+      user: null
+    }
+  }
+  componentWillMount() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({
+          user: user
+        })
+      }
+   });
+  }
   render() {
     return (
       <div className="App">
-        <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/register-email" component={RegisterWithEmail} />
-          <Route exact path="/products" component={Products} />
-          <Route exact path="/products/:category" component={Products} />
+          <Route exact path="/" component={this.state.user === null ? Presentation : Home } />
+          <Route exact path="/login" component={Login}/>
         </Switch>
       </div>
     );

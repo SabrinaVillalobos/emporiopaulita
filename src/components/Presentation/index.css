@@ -1,0 +1,16 @@
+.inner-slider {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inner-slider img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 390px) {
+  .inner-slider img {
+    width: 100%;
+  }
+}

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.12.1",
+    "nuka-carousel": "^4.0.3",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-palette": "^0.1.3",
